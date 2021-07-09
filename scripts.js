@@ -8,7 +8,7 @@ imgsBtn.addEventListener('click', () => {
 
 async function getImages() {
   let randomNum = Math.floor(Math.random() * 5 + 1)
-  const url = `https://picsum.photos/v2/list?page=${randomNum}&limit=100`
+  const url = `https://picsum.photos/v2/list?page=${randomNum}&limit=50`
   const res = await fetch(url)
   const data = await res.json()
   fetchImages(data)
