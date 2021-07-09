@@ -1,0 +1,66 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(16, 68, 165, 0.4));
+}
+
+main {
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.main-header {
+  font-size: 7rem;
+  text-align: center;
+  user-select: none;
+}
+
+.images-btn {
+  margin: 1rem 0;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cards-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 40rem;
+  padding: 2rem;
+}
+
+.card-image {
+  object-fit: cover;
+  height: 20rem;
+  width: 20rem;
+}
+
+.card-description {
+  font-size: 1.8rem;
+}
