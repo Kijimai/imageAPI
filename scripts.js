@@ -28,7 +28,7 @@ async function generateCard(data) {
   card.innerHTML = `
     <h3>Photographed by: </h3>
     <h2 class="card-title">${imgAuthor}</h2>
-    <img src="https://picsum.photos/id/${imgID}/200" alt="A nice little picture of a thing." class="card-image" id="card-image">
+    <a href="${data.url}" target="_blank"><img src="https://picsum.photos/id/${imgID}/200" alt="A nice little picture of a thing." class="card-image" id="card-image"></a>
     <p class="card-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id earum, animi pariatur iusto voluptas atque dicta, consectetur minus eius suscipit impedit voluptatibus, molestiae soluta cupiditate.</p>
   `
   cardsContainer.appendChild(card)
